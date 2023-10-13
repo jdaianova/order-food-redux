@@ -1,0 +1,13 @@
+.categoryBtn {
+    background-color: rgb(59, 59, 139);
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+}
+
+.categoryBtnSelected {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+}

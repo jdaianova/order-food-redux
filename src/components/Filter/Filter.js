@@ -1,0 +1,22 @@
+import './Filter.css'
+
+import { useSelector, useDispatch } from 'react-redux';
+import { filterCategory, getSelectedCategory } from '../../redux/dishesSlice';
+
+export default function Filter({ category }) {
+    const dispatch = useDispatch();
+    const selectedCategory = useSelector(getSelectedCategory);
+
+    return (
+        <div>
+            <p
+                onClick={() => { dispatch(filterCategory(category))}}
+                className={selectedCategory === category
+                    ? 'categoryBtnSelected'
+                    : 'categoryBtn'}
+            >
+                {category}
+            </p>
+        </div>
+    )
+};

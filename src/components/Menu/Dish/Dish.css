@@ -1,0 +1,24 @@
+.Dish {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: rgb(148, 188, 231);
+    padding-right: 10px;
+}
+
+.Item {
+    padding: 10px;
+}
+
+.Dish button {
+margin-left: 10px;
+background-color: rgb(46, 46, 98);
+text-transform: uppercase;
+color: white;
+font-size: 10px;
+border: none;
+padding: 7px;
+border-radius: 5px;
+}
